@@ -40,6 +40,12 @@ document.getElementById("cpButton").onclick = function(){
     value: 9.2,
     currency: 'USD',})
  }
+document.getElementById("ebButton").onclick = function(){
+    ttq.identify({
+    email: document.getElementById("emailInput").value,
+})
+    ttq.track('CompleteTutorial')
+ }
 </script>
 
 
